@@ -1,0 +1,36 @@
+@import "../../../scss/index.scss";
+
+.modal-publication {
+
+    height: 520px !important;
+
+    .ui.grid {
+        margin: 0;
+        height: 100%;
+    }
+
+    &__left {
+        @media only screen and (max-width: 991px) {
+            height: 50vh;
+            width: 100%;
+            background-size: contain;
+        }
+
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    &__right {
+        @media only screen and (max-width: 991px) {
+            overflow-y: scroll;
+            overflow-y: hidden;
+        }
+
+        display: block !important;
+        padding: 0 !important;
+        height: 40%;
+        width: 100% !important;
+
+    }
+}

@@ -1,0 +1,24 @@
+@import "../../../scss/index.scss";
+
+.preview-publication {
+    height: 100%;
+
+    &:hover {
+        cursor: pointer;
+        opacity: 0.9;
+    }
+
+    &__image {
+        @media only screen and (min-width: 991px) {
+            height: 200px;
+            width: 200px;
+        }
+
+        @media only screen and (max-width: 991px) {
+            height: 150px;
+            width: 150px;
+        }
+
+
+    }
+}
